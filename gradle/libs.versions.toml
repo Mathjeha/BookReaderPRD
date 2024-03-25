@@ -33,6 +33,7 @@ androidx-webkit = "1.5.0"
 
 assertj = "3.23.1"
 
+commons-io = "2.11.0"
 dokka = "1.7.20"
 
 google-exoplayer = "2.18.1"
@@ -103,6 +104,7 @@ androidx-webkit = { group = "androidx.webkit", name = "webkit", version.ref = "a
 
 assertj = { group = "org.assertj", name = "assertj-core", version.ref = "assertj" }
 
+commons-io = { module = "commons-io:commons-io", version.ref = "commons-io" }
 dokka-gradle = { group = "org.jetbrains.dokka", name = "dokka-gradle-plugin", version.ref = "dokka" }
 
 google-exoplayer-core = { group = "com.google.android.exoplayer", name = "exoplayer-core", version.ref = "google-exoplayer" }

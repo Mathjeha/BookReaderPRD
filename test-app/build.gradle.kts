@@ -9,6 +9,8 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     kotlin("plugin.parcelize")
+
+    id("com.chaquo.python")
 }
 
 android {
@@ -48,6 +50,12 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android.txt"))
         }
     }
+
+    flavorDimensions += "pyVersion"
+    productFlavors {
+        create("py311") { dimension = "pyVersion" }
+    }
+
     packagingOptions {
         resources.excludes.add("META-INF/*")
     }
@@ -60,6 +68,21 @@ android {
         }
     }
     namespace = "org.readium.r2.testapp"
+}
+
+chaquopy {
+    defaultConfig {
+        version = "3.11"
+        buildPython("E:/Program_Files/PYTHON/VENV/venv/Scripts/python.exe")
+        pip {
+            // A requirement specifier, with or without a version number:
+            install("Pillow")
+        }
+    }
+    productFlavors {
+        getByName("py311") { version = "3.11" }
+    }
+    sourceSets.getByName("main") {}
 }
 
 dependencies {
@@ -114,4 +137,9 @@ dependencies {
 
     androidTestImplementation(libs.androidx.ext.junit)
     androidTestImplementation(libs.androidx.expresso.core)
+
+    // URL for Accesibility
+    implementation(libs.commons.io)
+
+
 }

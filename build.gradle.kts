@@ -13,6 +13,9 @@ plugins {
     id("org.jetbrains.dokka") apply true
     id("org.jetbrains.kotlin.android") apply false
     id("org.jlleitschuh.gradle.ktlint") apply true
+
+    //modif ici
+    id("com.chaquo.python") version "15.0.1" apply false
 }
 
 apply(from = "$rootDir/scripts/publish-root.gradle")

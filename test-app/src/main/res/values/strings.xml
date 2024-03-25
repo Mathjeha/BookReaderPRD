@@ -25,6 +25,8 @@
 
     <string name="epubactivity_drm_info">DRM Info</string>
     <string name="epubactivity_set_bookmark">Add a bookmark</string>
+    <string name="divinaactivity_choose_accessibility">Choose accessibility mode</string>
+    <string name="divinaactivity_choose_font">Choose font for comic bubbles</string>
     <string name="epubactivity_settings">User Settings</string>
     <string name="epubactivity_book_nav_options">Book navigation menu</string>
     <string name="epubactivity_read_aloud_start">Read Aloud</string>

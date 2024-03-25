@@ -22,6 +22,19 @@
         app:showAsAction="always"
         tools:ignore="AlwaysShowAction"/>
 
+    <item
+        android:id="@+id/fontpersonnalisation"
+        android:icon="@drawable/fontsetting"
+        android:title="@string/divinaactivity_choose_font"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
+
+    <item
+        android:id="@+id/accessibility"
+        android:icon="@drawable/eye"
+        android:title="@string/divinaactivity_choose_accessibility"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
 
     <item
         android:id="@+id/bookmark"
